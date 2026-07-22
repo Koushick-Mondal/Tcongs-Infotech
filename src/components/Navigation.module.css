@@ -1,0 +1,96 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out, background 0.3s ease;
+}
+
+.glass {
+  background: rgba(11, 15, 25, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoIcon {
+  color: var(--primary);
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+  padding: 8px 0;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.ctaLaunch {
+  background: linear-gradient(135deg, #FF1E56, #E81CFF);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ctaLaunch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 30, 86, 0.4);
+}
+
+.dropdownIcon {
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+  opacity: 0.6;
+}
